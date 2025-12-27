@@ -1,7 +1,7 @@
 # Book Genre Analysis by Age Group
 
 ## Overview
-This project investigates whether readers’ genre preferences are influenced by their age. The analysis is conducted in R using SQL Server as the data source. It includes data cleaning, exploratory data analysis, statistical summaries, and visualization.
+This work investigates whether readers’ genre preferences are influenced by their age. The analysis is conducted in R using SQL Server as the data source. It includes data cleaning, exploratory data analysis, statistical summaries, and visualization.
 
 ## Objective
 - Explore the relationship between age groups and book genre preferences.
