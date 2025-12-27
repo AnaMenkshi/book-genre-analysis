@@ -1,6 +1,4 @@
-# Projekt
-
-## Worked by : Ana Menkshi
+# Book Genre Analysis by Age Group
 
 ### ~ Connection
 
@@ -377,6 +375,7 @@ plot_ly(
     yaxis = list(title = "Average Rating", range = c(0, 5)),
     legend = list(title = list(text = "<b>Age Group & Category</b>"))
   )
+
 
 
 
