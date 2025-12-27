@@ -165,7 +165,28 @@ install.packages(c("DBI", "odbc", "dplyr", "tidyr", "ggplot2", "ggmosaic", "resh
 ```bash
 Open scripts/Scripts.Rmd in RStudio
 ```
-4.Knit the document to HTML (Scripts.html) to view results
+3.Create the SQL database:
+```bash
+Open SQL Server Management Studio (SSMS)
+
+Run the data/books.sql file to create the books database and populate the tables
+```
+
+4.Connect to the SQL database in R:
+```bash
+library(DBI)
+library(odbc)
+
+con <- dbConnect(odbc(),
+                 Driver = "SQL Server",
+                 Server = "YOUR_SERVER_NAME",
+                 Database = "books",
+                 Trusted_Connection = "True")
+```
+
+5. Open reports/Scripts.Rmd in RStudio and ensure the connection string matches your environment
+
+6. Knit the document to HTML (Scripts.html) to view results
 
 ## Author
 **Ana Menkshi**
